@@ -17,8 +17,16 @@ for (i = 0; i < 76; i++) {
 //seleziono il bottone
 const bottoneEstrazione = document.getElementById("bottoneEstrazione");
 //funzione genera numeri random al click del bottone
+const numeroEstrattoVisualizzato = document.createElement("div");
+numeroEstrattoVisualizzato.classList.add("numeroEstratto");
 bottoneEstrazione.onclick = () => {
   const numeroEstratto2 = Math.ceil(Math.random() * 77);
+  numeroEstrattoVisualizzato.innerText = numeroEstratto2;
+  tabellone.appendChild(numeroEstrattoVisualizzato);
+
+  console.log(document.getElementsByClassName("numero")[numeroEstratto2 - 1]);
+
+  document.getElementsByClassName("numero")[numeroEstratto2 - 1].classList.add("numeroEstratto");
   console.log(numeroEstratto2);
 
   //   if (numeroEstratto2 === numero.id) {
