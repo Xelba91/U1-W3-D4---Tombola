@@ -19,21 +19,13 @@ const bottoneEstrazione = document.getElementById("bottoneEstrazione");
 //funzione genera numeri random al click del bottone
 const numeroEstrattoVisualizzato = document.createElement("div");
 numeroEstrattoVisualizzato.classList.add("numeroEstratto");
+
 bottoneEstrazione.onclick = () => {
-  const numeroEstratto2 = Math.ceil(Math.random() * 77);
-  numeroEstrattoVisualizzato.innerText = numeroEstratto2;
+  const numeroEstratto = Math.ceil(Math.random() * 76);
+  numeroEstrattoVisualizzato.innerText = numeroEstratto;
   tabellone.appendChild(numeroEstrattoVisualizzato);
+  //   console.log(document.getElementsByClassName("numero")[numeroEstratto - 1]);
 
-  console.log(document.getElementsByClassName("numero")[numeroEstratto2 - 1]);
-
-  document.getElementsByClassName("numero")[numeroEstratto2 - 1].classList.add("numeroEstratto");
-  console.log(numeroEstratto2);
-
-  //   if (numeroEstratto2 === numero.id) {
-  //     numero.classList.add("numeroEstratto");
-  // il bottone attiva la funzione di creazione numero e deve ritornare un numero
-  // con questo numero devo trovare il div con id corrispondente e devo applicare la classe estratto
+  document.getElementsByClassName("numero")[numeroEstratto - 1].classList.add("numeroEstratto");
+  //   console.log(numeroEstratto);
 };
-// };
-// const random = document.getElementById(Math.ceil(Math.random() * 77));
-// console.log(Math.ceil(Math.random() * 77));
