@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+.numero {
+  background-color: aquamarine;
+  justify-content: center;
+  width: 10%;
+  margin: 10px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+}
+#tabellone {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numeroEstratto {
+  color: red;
+}
